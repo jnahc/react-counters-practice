@@ -9,7 +9,15 @@ class CounterList extends Component {
       counters.push(<Counter/>)
     }
 
-  return <div className="Counter-row">{counters}</div>
+    return (
+      <div className="ink-grid">
+        <div className="column-group horizontal-gutters">
+          <div className="all-100">
+            {counters}
+          </div>
+        </div>
+      </div>
+    )
   };
 };
 

@@ -23,10 +23,12 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div className="Counter">
+      <div className="all-25">
         <h4>Counter: {this.state.count}</h4>
-        <button onClick={this.increaseCount}>Increment</button>
-        <button onClick={this.decreaseCount}>Decrement</button>
+        <div className="button-group">
+          <button className="ink-button green" onClick={this.increaseCount}>Increment</button>
+          <button className="ink-button red" onClick={this.decreaseCount}>Decrement</button>
+        </div>
       </div>
     );
   }
